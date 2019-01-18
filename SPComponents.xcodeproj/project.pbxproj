@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2B1B388821F2024C00F02190 /* SPComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1B388621F2024C00F02190 /* SPComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B1B388F21F2029400F02190 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B388E21F2029400F02190 /* Utils.swift */; };
+		2B1B389121F2032F00F02190 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B389021F2032F00F02190 /* UIView+Anchors.swift */; };
+		2B1B389321F2033500F02190 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B389221F2033500F02190 /* UIView+Animations.swift */; };
+		2B1B389521F2035C00F02190 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B389421F2035C00F02190 /* Connectivity.swift */; };
+		2B1B389721F2036A00F02190 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B389621F2036A00F02190 /* WebViewController.swift */; };
+		2B1B389C21F203C600F02190 /* CollectionView in Resources */ = {isa = PBXBuildFile; fileRef = 2B1B389B21F203C600F02190 /* CollectionView */; };
+		2B1B389E21F203F200F02190 /* BaseCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B389D21F203F200F02190 /* BaseCells.swift */; };
+		2B1B38A021F203F800F02190 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B389F21F203F800F02190 /* NoInternetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B1B388321F2024C00F02190 /* SPComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1B388621F2024C00F02190 /* SPComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPComponents.h; sourceTree = "<group>"; };
 		2B1B388721F2024C00F02190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1B388E21F2029400F02190 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2B1B389021F2032F00F02190 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		2B1B389221F2033500F02190 /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		2B1B389421F2035C00F02190 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		2B1B389621F2036A00F02190 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		2B1B389B21F203C600F02190 /* CollectionView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CollectionView; path = "../../iOS/pizza-delivery-iOS/pizza-delivery/CustomViews/CollectionView"; sourceTree = "<group>"; };
+		2B1B389D21F203F200F02190 /* BaseCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCells.swift; sourceTree = "<group>"; };
+		2B1B389F21F203F800F02190 /* NoInternetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +62,42 @@
 		2B1B388521F2024C00F02190 /* SPComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2B1B389A21F203BB00F02190 /* Views */,
+				2B1B389921F203A300F02190 /* Utilities */,
+				2B1B389821F2039600F02190 /* Extensions */,
+				2B1B389621F2036A00F02190 /* WebViewController.swift */,
 				2B1B388621F2024C00F02190 /* SPComponents.h */,
 				2B1B388721F2024C00F02190 /* Info.plist */,
 			);
 			path = SPComponents;
+			sourceTree = "<group>";
+		};
+		2B1B389821F2039600F02190 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B1B389021F2032F00F02190 /* UIView+Anchors.swift */,
+				2B1B389221F2033500F02190 /* UIView+Animations.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2B1B389921F203A300F02190 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2B1B388E21F2029400F02190 /* Utils.swift */,
+				2B1B389421F2035C00F02190 /* Connectivity.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		2B1B389A21F203BB00F02190 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B1B389F21F203F800F02190 /* NoInternetView.swift */,
+				2B1B389D21F203F200F02190 /* BaseCells.swift */,
+				2B1B389B21F203C600F02190 /* CollectionView */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +143,7 @@
 				TargetAttributes = {
 					2B1B388221F2024C00F02190 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1B389C21F203C600F02190 /* CollectionView in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1B389521F2035C00F02190 /* Connectivity.swift in Sources */,
+				2B1B388F21F2029400F02190 /* Utils.swift in Sources */,
+				2B1B389E21F203F200F02190 /* BaseCells.swift in Sources */,
+				2B1B389121F2032F00F02190 /* UIView+Anchors.swift in Sources */,
+				2B1B389721F2036A00F02190 /* WebViewController.swift in Sources */,
+				2B1B389321F2033500F02190 /* UIView+Animations.swift in Sources */,
+				2B1B38A021F203F800F02190 /* NoInternetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +318,7 @@
 		2B1B388C21F2024C00F02190 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.spaceapps.SPComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +345,7 @@
 		2B1B388D21F2024C00F02190 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
