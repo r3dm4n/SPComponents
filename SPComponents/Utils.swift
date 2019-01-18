@@ -35,19 +35,19 @@ class Utils {
         }
     }
     
-    static func getOwnerName() -> String {
-        return "© spaceapps.io"
-    }
+//    static func getOwnerName() -> String {
+//        return "© spaceapps.io"
+//    }
     
-    static func getDisplayName() -> String {
-        guard let name = Bundle.main.displayName else { return ""}
-        return name.capitalized.replacingOccurrences(of: "-", with: " ")
-    }
-    
-    static func getDisplayVersion() -> String {
-        guard let version = Bundle.main.displayVersion else { return ""}
-        return version
-    }
+//    static func getDisplayName() -> String {
+//        guard let name = Bundle.main.displayName else { return ""}
+//        return name.capitalized.replacingOccurrences(of: "-", with: " ")
+//    }
+//
+//    static func getDisplayVersion() -> String {
+//        guard let version = Bundle.main.displayVersion else { return ""}
+//        return version
+//    }
     
     
     
@@ -58,14 +58,14 @@ fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ inp
 }
 
 
-extension Bundle {
-    
-    var displayName: String? {
-        return object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ??
-            object(forInfoDictionaryKey: "CFBundleName") as? String
-    }
-    
-    var displayVersion: String? {
-        return object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
-    }
-}
+//extension Bundle {
+//
+//    var displayName: String? {
+//        return object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ??
+//            object(forInfoDictionaryKey: "CFBundleName") as? String
+//    }
+//
+//    var displayVersion: String? {
+//        return object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+//    }
+//}
